@@ -1,10 +1,10 @@
-20:03:11 **** Incremental Build of configuration Debug for project traffic lights ****
+20:23:56 **** Incremental Build of configuration Debug for project traffic lights ****
 make -j8 all 
 arm-none-eabi-size   traffic\ lights.elf 
    text	   data	    bss	    dec	    hex	filename
-   6660	     20	   1572	   8252	   203c	traffic lights.elf
+   6672	     20	   1572	   8264	   2048	traffic lights.elf
 Finished building: default.size.stdout
  
 
-20:03:11 Build Finished. 0 errors, 0 warnings. (took 402ms)
+20:23:56 Build Finished. 0 errors, 0 warnings. (took 478ms)
 

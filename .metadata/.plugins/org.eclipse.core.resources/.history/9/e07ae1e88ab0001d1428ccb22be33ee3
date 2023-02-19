@@ -210,8 +210,6 @@ int main(void)
 	  	HAL_Delay(1000);
 	  stan_zielona=0;
 	  	  zielona(stan_zielona);
-	  	stan_zolta=1;
-	  	zolta(stan_zolta);
 	  	 }
     /* USER CODE END WHILE */
 
