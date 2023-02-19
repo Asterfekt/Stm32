@@ -98,7 +98,7 @@ int main(void)
 		 HAL_GPIO_WritePin(LD1_GPIO_Port,LD1_Pin,GPIO_PIN_SET);
 	  }else{
 		  HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin,GPIO_PIN_RESET);
-		  HAL_GPIO_WritePin(LD1_GPIO_Port,LD1_Pin,GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(LD1_GPIO_Port,LD2_Pin,GPIO_PIN_RESET);
 	  }
     /* USER CODE END WHILE */
 

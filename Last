@@ -1,0 +1,29 @@
+[33mcommit a81348a6aee1d5048025ea3287e0ddedf9dfdb18[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Mateusz Krzyściak <mateuszkrzysciak1@gmail.com>
+Date:   Sun Feb 19 17:45:52 2023 +0100
+
+    Linijka Led
+
+[33mcommit 6e08f93ee2a59b7843ac53330c886b7c021f6ece[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Mateusz Krzyściak <mateuszkrzysciak1@gmail.com>
+Date:   Sat Feb 18 20:47:05 2023 +0100
+
+    Wyjścia wejścia
+
+[33mcommit c17acdb795ab77766492c77dffa52cb7230e733c[m
+Author: Mateusz Krzyściak <mateuszkrzysciak1@gmail.com>
+Date:   Sat Feb 18 20:45:43 2023 +0100
+
+    Signed-off-by: Mateusz Krzyściak <mateuszkrzysciak1@gmail.com>
+
+[33mcommit 9b7e7c1cf5cee2564a486da5cc9562e359440e6b[m
+Author: Mateusz Krzyściak <103695808+Asterfekt@users.noreply.github.com>
+Date:   Tue Feb 14 22:46:14 2023 +0100
+
+    Create README.md
+
+[33mcommit 4665740418e0a33181bb39b4d2e8b2acd8f6d398[m
+Author: Mateusz Krzyściak <mateuszkrzysciak1@gmail.com>
+Date:   Tue Feb 14 22:32:35 2023 +0100
+
+    Pierwszy Project Stm32
