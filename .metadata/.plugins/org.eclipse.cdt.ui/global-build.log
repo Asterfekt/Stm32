@@ -1,31 +1,31 @@
-20:23:50 **** Incremental Build of configuration Debug for project traffic lights ****
+21:49:36 **** Incremental Build of configuration Debug for project UART ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "traffic lights.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\traffic lights\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="traffic lights.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: traffic lights.elf
+arm-none-eabi-gcc -o "UART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\UART\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART.elf
  
-arm-none-eabi-size   traffic\ lights.elf 
-arm-none-eabi-objdump -h -S  traffic\ lights.elf  > "traffic lights.list"
-arm-none-eabi-objcopy  -O binary  traffic\ lights.elf  "traffic lights.bin"
+arm-none-eabi-size   UART.elf 
+arm-none-eabi-objdump -h -S  UART.elf  > "UART.list"
+arm-none-eabi-objcopy  -O binary  UART.elf  "UART.bin"
    text	   data	    bss	    dec	    hex	filename
-   6672	     20	   1572	   8264	   2048	traffic lights.elf
+  31604	    488	   1752	  33844	   8434	UART.elf
 Finished building: default.size.stdout
  
-Finished building: traffic lights.bin
-Finished building: traffic lights.list
+Finished building: UART.bin
  
+Finished building: UART.list
  
-20:23:55 **** Incremental Build of configuration Debug for project traffic lights ****
+21:49:45 **** Incremental Build of configuration Debug for project UART ****
 make -j8 all 
-arm-none-eabi-size   traffic\ lights.elf 
+arm-none-eabi-size   UART.elf 
    text	   data	    bss	    dec	    hex	filename
-   6672	     20	   1572	   8264	   2048	traffic lights.elf
+  31604	    488	   1752	  33844	   8434	UART.elf
 Finished building: default.size.stdout
  
-20:23:56 **** Incremental Build of configuration Debug for project traffic lights ****
+21:49:46 **** Incremental Build of configuration Debug for project UART ****
 make -j8 all 
-arm-none-eabi-size   traffic\ lights.elf 
+arm-none-eabi-size   UART.elf 
    text	   data	    bss	    dec	    hex	filename
-   6672	     20	   1572	   8264	   2048	traffic lights.elf
+  31604	    488	   1752	  33844	   8434	UART.elf
 Finished building: default.size.stdout
  
