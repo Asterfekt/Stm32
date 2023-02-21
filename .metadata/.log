@@ -1407,3 +1407,6 @@ Reason: (1) Failed to connect to device. Please check power and cabling to targe
 !SUBENTRY 2 com.st.stm32cube.ide.mcu.debug.stlink 4 0 2023-02-21 13:58:14.244
 !MESSAGE Error in initializing ST-LINK device.
 Reason: (1) Failed to connect to device. Please check power and cabling to target.
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-02-21 14:32:06.998
+!MESSAGE Indexed 'Watchdog' (21 sources, 81 headers) in 2.54 sec: 4,248 declarations; 17,696 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
