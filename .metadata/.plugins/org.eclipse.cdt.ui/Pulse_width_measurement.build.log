@@ -1,0 +1,10 @@
+17:06:00 **** Incremental Build of configuration Debug for project Pulse_width_measurement ****
+make -j8 all 
+arm-none-eabi-size   Pulse_width_measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17004	    120	   1744	  18868	   49b4	Pulse_width_measurement.elf
+Finished building: default.size.stdout
+ 
+
+17:06:01 Build Finished. 0 errors, 0 warnings. (took 394ms)
+
