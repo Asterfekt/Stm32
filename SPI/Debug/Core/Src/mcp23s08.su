@@ -1,0 +1,2 @@
+mcp23s08.c:12:6:mcp_reg_write	24	static
+mcp23s08.c:21:9:mcp_reg_read	32	static

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SPI/Core/Src/MCP23S08.C&apos; to &apos;mcp23s08.c&apos;" description="Rename resource &apos;MCP23S08.C&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/MCP23S08.C" name="mcp23s08.c" stamp="1677440558392" updateReferences="true"/>
+</session>
