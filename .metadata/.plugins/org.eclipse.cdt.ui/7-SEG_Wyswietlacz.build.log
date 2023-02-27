@@ -1,0 +1,10 @@
+20:32:26 **** Incremental Build of configuration Debug for project 7-SEG_Wyswietlacz ****
+make -j8 all 
+arm-none-eabi-size   7-SEG_Wyswietlacz.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12904	     20	   1716	  14640	   3930	7-SEG_Wyswietlacz.elf
+Finished building: default.size.stdout
+ 
+
+20:32:27 Build Finished. 0 errors, 0 warnings. (took 462ms)
+

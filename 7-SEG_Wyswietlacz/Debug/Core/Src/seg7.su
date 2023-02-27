@@ -1,0 +1,4 @@
+seg7.c:13:13:set_output	16	static
+seg7.c:23:6:seg7_show_digit	16	static
+seg7.c:61:6:seg7_show	16	static
+seg7.c:66:6:seg7_update	8	static
