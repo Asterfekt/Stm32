@@ -1,0 +1,4 @@
+DRV8835.c:13:6:drv8835_mode_control	16	static
+DRV8835.c:20:6:drv8835_set_motorA_direction	16	static
+DRV8835.c:27:6:drv8835_set_motorA_speed	16	static
+DRV8835.c:34:6:drv8835_init	8	static

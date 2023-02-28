@@ -1,0 +1,4 @@
+L293D.c:13:6:L293D_mode_control	16	static
+L293D.c:20:6:L293D_set_motorA_direction	16	static
+L293D.c:27:6:L293D_set_motorA_speed	16	static
+L293D.c:34:6:L293D_init	8	static

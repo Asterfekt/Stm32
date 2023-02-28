@@ -411,9 +411,9 @@ int main(void)
  8000504:	2120      	movs	r1, #32
  8000506:	4805      	ldr	r0, [pc, #20]	; (800051c <main+0x50>)
  8000508:	f000 fc44 	bl	8000d94 <HAL_GPIO_WritePin>
-		  HAL_GPIO_WritePin(LD1_GPIO_Port,LD1_Pin,GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(LD1_GPIO_Port,LD2_Pin,GPIO_PIN_RESET);
  800050c:	2200      	movs	r2, #0
- 800050e:	2101      	movs	r1, #1
+ 800050e:	2120      	movs	r1, #32
  8000510:	4802      	ldr	r0, [pc, #8]	; (800051c <main+0x50>)
  8000512:	f000 fc3f 	bl	8000d94 <HAL_GPIO_WritePin>
 	  if (HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin) == GPIO_PIN_RESET){
