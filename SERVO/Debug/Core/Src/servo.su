@@ -1,0 +1,2 @@
+servo.c:15:6:servo_init	16	static
+servo.c:23:6:servo_set_angle	24	static
