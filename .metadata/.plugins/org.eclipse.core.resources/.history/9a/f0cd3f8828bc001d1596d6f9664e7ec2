@@ -1,0 +1,13 @@
+/*
+ * OneWire.h
+ *
+ *  Created on: Mar 6, 2023
+ *      Author: Mateusz Krzyściak
+ */
+
+#ifndef INC_ONEWIRE_H_
+#define INC_ONEWIRE_H_
+
+
+
+#endif /* INC_ONEWIRE_H_ */

@@ -1,4 +1,4 @@
-21:21:10 **** Incremental Build of configuration Debug for project OLED I2C ****
+15:27:10 **** Incremental Build of configuration Debug for project OLED I2C ****
 make -j8 all 
 arm-none-eabi-size   OLED\ I2C.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   OLED\ I2C.elf
 Finished building: default.size.stdout
  
 
-21:21:10 Build Finished. 0 errors, 0 warnings. (took 470ms)
+15:27:11 Build Finished. 0 errors, 0 warnings. (took 598ms)
 

@@ -1,4 +1,4 @@
-22:09:28 **** Incremental Build of configuration Debug for project MOSTEK_H_DC ****
+15:27:08 **** Incremental Build of configuration Debug for project MOSTEK_H_DC ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/L293D.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/L293D.d" -MT"Core/Src/L293D.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/L293D.o"
 arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
@@ -22,5 +22,5 @@ Finished building: MOSTEK_H_DC.bin
 Finished building: MOSTEK_H_DC.list
  
 
-22:09:29 Build Finished. 0 errors, 0 warnings. (took 1s.694ms)
+15:27:10 Build Finished. 0 errors, 0 warnings. (took 1s.848ms)
 

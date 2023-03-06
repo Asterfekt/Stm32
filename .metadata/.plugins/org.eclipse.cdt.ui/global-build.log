@@ -1,24 +1,24 @@
-13:57:14 **** Incremental Build of configuration Debug for project SERVO ****
+16:58:34 **** Incremental Build of configuration Debug for project DS18B20 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/servo.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/servo.d" -MT"Core/Src/servo.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/servo.o"
-arm-none-eabi-gcc -o "SERVO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\SERVO\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SERVO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SERVO.elf
+arm-none-eabi-gcc "../Core/Src/ds18b20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ds18b20.d" -MT"Core/Src/ds18b20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ds18b20.o"
+arm-none-eabi-gcc -o "DS18B20.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\DS18B20\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DS18B20.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DS18B20.elf
  
-arm-none-eabi-size   SERVO.elf 
-arm-none-eabi-objdump -h -S  SERVO.elf  > "SERVO.list"
-arm-none-eabi-objcopy  -O binary  SERVO.elf  "SERVO.bin"
+arm-none-eabi-size   DS18B20.elf 
+arm-none-eabi-objdump -h -S  DS18B20.elf  > "DS18B20.list"
+arm-none-eabi-objcopy  -O binary  DS18B20.elf  "DS18B20.bin"
    text	   data	    bss	    dec	    hex	filename
-   9932	     20	   1716	  11668	   2d94	SERVO.elf
+  33868	    488	   1736	  36092	   8cfc	DS18B20.elf
 Finished building: default.size.stdout
  
-Finished building: SERVO.bin
+Finished building: DS18B20.bin
  
-Finished building: SERVO.list
+Finished building: DS18B20.list
  
-13:57:20 **** Incremental Build of configuration Debug for project SERVO ****
+16:58:41 **** Incremental Build of configuration Debug for project DS18B20 ****
 make -j8 all 
-arm-none-eabi-size   SERVO.elf 
+arm-none-eabi-size   DS18B20.elf 
    text	   data	    bss	    dec	    hex	filename
-   9932	     20	   1716	  11668	   2d94	SERVO.elf
+  33868	    488	   1736	  36092	   8cfc	DS18B20.elf
 Finished building: default.size.stdout
  

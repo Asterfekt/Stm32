@@ -3150,3 +3150,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-03-06 13:08:01.624
 !MESSAGE Indexed 'SERVO' (21 sources, 81 headers) in 2.73 sec: 4,248 declarations; 17,696 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-06 14:18:50.772
+!MESSAGE Indexed 'DS18b20' (21 sources, 81 headers) in 2.73 sec: 4,248 declarations; 17,696 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-06 15:15:06.594
+!MESSAGE Indexed 'TIM1' (21 sources, 81 headers) in 2.95 sec: 4,248 declarations; 17,696 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-03-06 16:12:23.265
+!MESSAGE Indexed 'DS18B20' (21 sources, 81 headers) in 2.75 sec: 4,248 declarations; 17,696 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0091%)

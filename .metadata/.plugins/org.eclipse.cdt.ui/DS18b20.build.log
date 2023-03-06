@@ -1,0 +1,10 @@
+16:58:41 **** Incremental Build of configuration Debug for project DS18B20 ****
+make -j8 all 
+arm-none-eabi-size   DS18B20.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33868	    488	   1736	  36092	   8cfc	DS18B20.elf
+Finished building: default.size.stdout
+ 
+
+16:58:42 Build Finished. 0 errors, 0 warnings. (took 456ms)
+
