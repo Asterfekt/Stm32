@@ -1,0 +1,20 @@
+18:57:46 **** Incremental Build of configuration Debug for project DS3231 I2C ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c: In function 'HAL_UART_Transmit_DMA':
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c:1440:5: warning: implicit declaration of function 'ATOMIC_SET_BIT' [-Wimplicit-function-declaration]
+ 1440 |     ATOMIC_SET_BIT(huart->Instance->CR3, USART_CR3_DMAT);
+      |     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c: In function 'HAL_UART_DMAPause':
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c:1503:5: warning: implicit declaration of function 'ATOMIC_CLEAR_BIT' [-Wimplicit-function-declaration]
+ 1503 |     ATOMIC_CLEAR_BIT(huart->Instance->CR3, USART_CR3_DMAT);
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "DS3231 I2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\DS3231 I2C\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DS3231 I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o: in function `UART_WaitOnFlagUntilTimeout':
+C:/Users/mateu/STM32CubeIDE/workspace/DS3231 I2C/Debug/../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c:3182: undefined reference to `ATOMIC_CLEAR_BIT'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: DS3231 I2C.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+18:57:48 Build Failed. 3 errors, 2 warnings. (took 1s.607ms)
+

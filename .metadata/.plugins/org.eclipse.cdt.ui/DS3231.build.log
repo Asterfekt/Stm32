@@ -1,0 +1,10 @@
+19:37:49 **** Incremental Build of configuration Debug for project DS3231 ****
+make -j8 all 
+arm-none-eabi-size   DS3231.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27508	    120	   2000	  29628	   73bc	DS3231.elf
+Finished building: default.size.stdout
+ 
+
+19:37:50 Build Finished. 0 errors, 0 warnings. (took 469ms)
+
