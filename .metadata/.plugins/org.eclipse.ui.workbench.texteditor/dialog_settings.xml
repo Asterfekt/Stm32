@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="void DS3231_Init"/>
 		<list key="findhistory">
+			<item value="void DS3231_Init"/>
+			<item value="DS3231_GetDateTime"/>
+			<item value="calculate"/>
+			<item value="dma"/>
+			<item value="void DS3231_ReceiveDateTimeDMA(void);"/>
 			<item value="EXTERN"/>
 			<item value="1"/>
 		</list>
@@ -15,8 +20,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="801"/>
-		<item key="DIALOG_Y_ORIGIN" value="222"/>
+		<item key="DIALOG_X_ORIGIN" value="1429"/>
+		<item key="DIALOG_Y_ORIGIN" value="292"/>
 		<item key="DIALOG_WIDTH" value="336"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

@@ -1,46 +1,32 @@
-19:37:43 **** Incremental Build of configuration Debug for project DS3231 ****
+16:10:02 **** Incremental Build of configuration Debug for project A988-step_motor ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/DS3231.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/DS3231.d" -MT"Core/Src/DS3231.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/DS3231.o"
+arm-none-eabi-gcc "../Core/Src/A988.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/A988.d" -MT"Core/Src/A988.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/A988.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/DS3231.c: In function 'DS3231_ReceiveDateTimeDMA':
-../Core/Src/DS3231.c:165:72: warning: passing argument 5 of 'HAL_I2C_Mem_Read_DMA' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  165 |  HAL_I2C_Mem_Read_DMA(hi2c_ds3231, DS3231_ADDRESS, DS3231_REG_TIME, 1, Ds3231Buffer, 7);
-      |                                                                        ^~~~~~~~~~~~
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:359,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/DS3231.c:14:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:597:137: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
-  597 | HAL_StatusTypeDef HAL_I2C_Mem_Read_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size);
-      |                                                                                                                                ~~~~~~~~~^~~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:108:26: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-  108 |    MessageSize = sprintf(Message, "%02d:%02d:%02d\n\r", r.Hour, r.Minute, r.Second);
-      |                          ^~~~~~~
-      |                          |
-      |                          uint8_t * {aka unsigned char *}
-In file included from ../Core/Src/main.c:29:
-c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-  244 | int sprintf (char *__restrict, const char *__restrict, ...)
-      |              ^
-arm-none-eabi-gcc -o "DS3231.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\DS3231\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DS3231.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: DS3231.elf
+arm-none-eabi-gcc -o "A988-step_motor.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\mateu\STM32CubeIDE\workspace\A988-step_motor\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="A988-step_motor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: A988-step_motor.elf
  
-arm-none-eabi-size   DS3231.elf 
-arm-none-eabi-objdump -h -S  DS3231.elf  > "DS3231.list"
-arm-none-eabi-objcopy  -O binary  DS3231.elf  "DS3231.bin"
+arm-none-eabi-size   A988-step_motor.elf 
+arm-none-eabi-objdump -h -S  A988-step_motor.elf  > "A988-step_motor.list"
+arm-none-eabi-objcopy  -O binary  A988-step_motor.elf  "A988-step_motor.bin"
    text	   data	    bss	    dec	    hex	filename
-  27508	    120	   2000	  29628	   73bc	DS3231.elf
+   7660	     24	   1640	   9324	   246c	A988-step_motor.elf
 Finished building: default.size.stdout
  
-Finished building: DS3231.bin
+Finished building: A988-step_motor.bin
+Finished building: A988-step_motor.list
  
-Finished building: DS3231.list
  
-19:37:49 **** Incremental Build of configuration Debug for project DS3231 ****
+16:10:09 **** Incremental Build of configuration Debug for project A988-step_motor ****
 make -j8 all 
-arm-none-eabi-size   DS3231.elf 
+arm-none-eabi-size   A988-step_motor.elf 
    text	   data	    bss	    dec	    hex	filename
-  27508	    120	   2000	  29628	   73bc	DS3231.elf
+   7660	     24	   1640	   9324	   246c	A988-step_motor.elf
+Finished building: default.size.stdout
+ 
+16:12:58 **** Incremental Build of configuration Debug for project A988-step_motor ****
+make -j8 all 
+arm-none-eabi-size   A988-step_motor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7660	     24	   1640	   9324	   246c	A988-step_motor.elf
 Finished building: default.size.stdout
  

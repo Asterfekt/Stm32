@@ -1,0 +1,10 @@
+16:12:58 **** Incremental Build of configuration Debug for project A988-step_motor ****
+make -j8 all 
+arm-none-eabi-size   A988-step_motor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7660	     24	   1640	   9324	   246c	A988-step_motor.elf
+Finished building: default.size.stdout
+ 
+
+16:12:58 Build Finished. 0 errors, 0 warnings. (took 460ms)
+
