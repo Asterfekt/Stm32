@@ -1,3 +1,8 @@
+connections/org.eclipse.remote.serial.core.connectionType/Multi_Uart/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/Multi_Uart/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/Multi_Uart/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/Multi_Uart/serial.portName=COM3
+connections/org.eclipse.remote.serial.core.connectionType/Multi_Uart/serial.stopBits=0
 connections/org.eclipse.remote.serial.core.connectionType/UART%3C%3ENucleo+STM32RE/serial.baudRate=11
 connections/org.eclipse.remote.serial.core.connectionType/UART%3C%3ENucleo+STM32RE/serial.byteSize=3
 connections/org.eclipse.remote.serial.core.connectionType/UART%3C%3ENucleo+STM32RE/serial.parity=0

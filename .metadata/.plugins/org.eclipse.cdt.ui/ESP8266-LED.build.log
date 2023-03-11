@@ -1,0 +1,61 @@
+11:07:29 **** Incremental Build of configuration Debug for project ESP8266-LED ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:12: error: too many arguments to function 'IsDataAvailable'
+  104 |   {    if (IsDataAvailable(pc_uart))
+      |            ^~~~~~~~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/UartRingbuffer.h:43:5: note: declared here
+   43 | int IsDataAvailable(void);
+      |     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:106:15: error: too many arguments to function 'Uart_read'
+  106 |    int data = Uart_read(pc_uart);
+      |               ^~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/UartRingbuffer.h:28:5: note: declared here
+   28 | int Uart_read(void);
+      |     ^~~~~~~~~
+../Core/Src/main.c:107:21: error: 'wifi_uart' undeclared (first use in this function)
+  107 |    Uart_write(data, wifi_uart);
+      |                     ^~~~~~~~~
+../Core/Src/main.c:107:21: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:107:4: error: too many arguments to function 'Uart_write'
+  107 |    Uart_write(data, wifi_uart);
+      |    ^~~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/UartRingbuffer.h:31:6: note: declared here
+   31 | void Uart_write(int c);
+      |      ^~~~~~~~~~
+../Core/Src/main.c:110:7: error: too many arguments to function 'IsDataAvailable'
+  110 |   if (IsDataAvailable(wifi_uart))
+      |       ^~~~~~~~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/UartRingbuffer.h:43:5: note: declared here
+   43 | int IsDataAvailable(void);
+      |     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:112:15: error: too many arguments to function 'Uart_read'
+  112 |    int data = Uart_read(wifi_uart);
+      |               ^~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/UartRingbuffer.h:28:5: note: declared here
+   28 | int Uart_read(void);
+      |     ^~~~~~~~~
+../Core/Src/main.c:113:4: error: too many arguments to function 'Uart_write'
+  113 |    Uart_write(data, pc_uart);
+      |    ^~~~~~~~~~
+In file included from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:20:
+../Core/Inc/UartRingbuffer.h:31:6: note: declared here
+   31 | void Uart_write(int c);
+      |      ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+11:07:30 Build Failed. 8 errors, 0 warnings. (took 844ms)
+

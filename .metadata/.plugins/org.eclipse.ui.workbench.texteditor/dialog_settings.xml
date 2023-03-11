@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="void DS3231_Init"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="huart1"/>
 			<item value="void DS3231_Init"/>
 			<item value="DS3231_GetDateTime"/>
 			<item value="calculate"/>

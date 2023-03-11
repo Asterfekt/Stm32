@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="org.eclipse.remote.internal.console.TerminalConsoleSettingsDialog">
 		<item key="connectionType" value="org.eclipse.remote.serial.core.connectionType"/>
-		<item key="connectionName" value="UART&lt;&gt;Nucleo STM32RE"/>
+		<item key="connectionName" value="Multi_Uart"/>
 		<item key="encoding" value="windows-1250"/>
 	</section>
 </section>
